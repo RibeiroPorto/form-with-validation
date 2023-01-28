@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,900&display=swap');
+body{
+    height:100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-family: 'Roboto', sans-serif;
+    background: url('../images/bg-repeat.jpg');
+    background-repeat: repeat-x;
+    background-size: auto 100%;
+}
+.doubts-info{
+    width:290px;
+ /* margin-left: 100px; */
+    color:white;
+
+}
+.doubts-info span, p:nth-child(2){
+    font-size: 20px;
+    font-weight: 900;
+}
+.doubts-info p:last-child{
+    font-size: 15px;
+    font-weight: 400;
+    margin-top: 10px;
+}
+.msg-form{
+    height: 380px;
+    width: 340px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    padding: 20px;
+    background-color: white;
+    position:relative
+}
+.msg-form input,textarea, button{
+    width: 100%;
+    font-size: 15px;
+    font-weight: 700;
+    font-family: 'Roboto', sans-serif;
+    border-radius: 5px;
+    
+}
+.msg-form p.required{
+    color:rgba(245, 46, 46, 1);
+    font-size: 9px;
+    font-weight: 400;
+    position:relative;
+    top:-4px;
+    visibility: hidden;
+}
+.msg-form p.required.visible{
+visibility: visible;
+}
+.msg-form .red-border{
+    border: solid 1px red;
+}
+.msg-form .green-border{
+    border: solid 1px green;
+}
+.msg-form #name,#email,#phone{
+    height:35px;
+    
+}
+.msg-form #message{
+    height: 100px;
+    resize: none;
+    
+}
+.msg-form p{
+    font-size: 15px;
+    font-weight: 400;
+    
+}
+.msg-form #Send-button{
+    height: 41px;
+    color:white;
+    background-color: rgba(60, 204, 135, 1);
+    border-style: none;
+    
+}
+
